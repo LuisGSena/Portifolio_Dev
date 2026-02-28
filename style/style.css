@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #101727;
+}
+.navMenus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 65px;
+    padding: 30px 0 30px 10px;
+    border-radius: 50px;
+    background-color: #152e43;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px 5px rgba(24, 56, 93, 0.8), 
+                0 0 40px 2px rgba(0, 210, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    position: fixed;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+  
+}
+
+.navIcon {
+    width: 45px;
+    height: auto;
+    opacity: 0.6; 
+    transition: 0.3s;
+    filter: invert(1);
+}
+
+.navIcon:hover {
+    opacity: 1; 
+    filter: drop-shadow(0 0 8px #00d2ff);
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.fotoPerfil{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.fotoPerfil img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #00d2ff;
+    box-shadow:  0 0 15px rgba(0,210,255,0.5);
+}
+
+.sobreText{
+    width: 70%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sobreText p{
+    color: white;
+}
+.sobreText h1{
+    color: #00d2ff;
+    text-align: center;
+}
+.centraDownloads{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+.btn-cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: #00d2ff;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.5);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-git{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.5);
+    transition: 0.3s;
+    font-weight: bold;
+}
