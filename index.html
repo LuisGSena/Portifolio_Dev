@@ -14,6 +14,7 @@
             <a href="index.html"><img class="navIcon" src="Img/home.png" alt="Imagem de home"></a>
             <a href="projects.html"><img src="Img/projects.png" alt="pasta de projetos" class="navIcon"></a>
             <a href=""><img src="Img/skills.png" alt="Skills" class="navIcon"></a>
+            <a href="#entre-contato"><img src="Img/Icon-interrogacao.png" alt="" class="navIcon"></a>
         </nav>
 
     </section>
@@ -33,6 +34,58 @@
             <a href="downloads/curriculo-luis.pdf" download="Curriculo_Luis" class="btn-cv">Download CV</a>
             <a href="https://github.com/LuisGSena" target="_blank" class="btn-git">GitHub</a>
         </div>
+    </section>
+
+    <section id="skills" class="my-skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="Img/Html5.png" alt="HTML Icon">
+                <span>HTML5</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <img src="Img/Css3.png" alt="CSS Icon">
+                <span>CSS3</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <img src="Img/jsIcon.png" alt="JS Icon">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="entre-contato" class="entre-contato">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso te ajudar?"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
     </section>
 </body>
 
