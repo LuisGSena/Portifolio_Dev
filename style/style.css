@@ -226,3 +226,67 @@ input:focus {
     font-weight: bold;
     cursor: pointer;
 }
+/*Media Query Responsividade*/
+@media (max-width: 768px) {
+    
+    /*Modifica o menu para ficar a cima*/
+    .navMenus {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        transform: none;
+        border-radius: 0;
+        padding: 0;
+        background-color: rgba(16, 23, 39, 0.98);
+        border: none;
+        border-bottom: 1px solid rgba(0, 210, 255, 0.3);
+        z-index: 9999;
+    }
+
+    /*Configurando para os itens do menu ficarem lado a lado*/
+    .navMenus nav {
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    }
+
+    /*ajuste dos icones*/
+    .navIcon {
+        width: 28px;
+        height: auto;
+        opacity: 0.8;
+    }
+
+    /*colocar para o menu nao sumir atras*/
+    .sobre {
+        margin-top: 80px; 
+        margin-left: 0;
+        padding: 40px 20px;
+    }
+
+    /*deixar as skills em coluna unica*/
+    .skills-container {
+        grid-template-columns: 1fr;/* lembrar que essa coisa aqui e para definir que a seção sera definida em colunas de 1*/
+        gap: 20px;
+    }
+
+    /*Configuração do botoes de download e github*/
+    .centraDownloads {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .btn-cv, .btn-git {
+        width: 100%;
+        max-width: 300px;
+    }
+}
